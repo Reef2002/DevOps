@@ -51,5 +51,6 @@ Let me explain:
 
 -d: This makes the container run in the background.
 -p 8000:8000: This connects port 8000 on your machine to port 8000 in the container.
+
 5. Access the web app:
 Once the container is running, you can access the web app by going to http://localhost:8000 in your browser.
