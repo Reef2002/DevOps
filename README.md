@@ -1,7 +1,7 @@
 First of all you have to build project first and:
 
 1. Create a Dockerfile:
-First, we need to create a file called Dockerfile in our project folder. Inside this file, we write the following code:
+First, I need to create a file called Dockerfile in my project folder. Inside this file, I write the following code:
 
 ![image](https://github.com/user-attachments/assets/0584207b-acc7-41d6-8493-211bbde37ea8)
 
