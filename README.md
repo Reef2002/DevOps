@@ -10,23 +10,30 @@ Let me explain each line:
 FROM python:3.10-alpine: 
 This line tells Docker to use a version of Python 3.10 as the image.
 
+
 WORKDIR /web: 
 This sets the working directory inside the container to /web.
+
 
 COPY finalweb/ .: 
 This copies all files from the finalweb/ folder on my computer to the /web directory in the container.
 
+
 COPY requirements.txt .: 
 This copies the requirements.txt file to the container.
+
 
 RUN pip install -r requirements.txt: 
 This installs all the dependencies listed in requirements.txt.
 
+
 EXPOSE 8000: 
 This tells Docker that this app will use port 8000.
 
+
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]: 
 This is the command that starts the Django web server and listens on port 8000.
+
 
 2. Create a requirements.txt file:
 Next, you need to create a file called requirements.txt in the project folder. This file lists all the dependencies my project needs. For example:
